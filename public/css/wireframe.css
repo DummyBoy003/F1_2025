@@ -1,0 +1,91 @@
+/* public/css/wireframe.css */
+
+/* Reseteo básico */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background-color: #f4f4f4; color: #333; padding: 20px; }
+
+/* Contenedor Principal */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #333;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área Header y Navegación */
+.area-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 2px solid #ccc;
+}
+.logo-placeholder { font-weight: bold; font-size: 1.2rem; }
+.menu-principal { display: flex; gap: 20px; }
+.menu-principal a { text-decoration: none; color: #555; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; }
+.menu-principal { 
+    display: flex; 
+    gap: 15px; /* Reduje un poco el espacio para que quepan mejor */
+    flex-wrap: wrap; /* Permite que si no caben, se pasen a la línea de abajo ordenadamente */
+    justify-content: flex-end;
+}
+
+/* Área de Contenido Central */
+.contenido-central { padding: 40px; flex-grow: 1; }
+.titulo-seccion { text-align: center; margin-bottom: 30px; font-size: 2rem; text-transform: uppercase; }
+
+/* Estructura de Cuadrícula (Grid) */
+.grid-tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Artículo / Tarjeta Genérica */
+.tarjeta-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.imagen-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #eee;
+    border: 1px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.8rem;
+}
+.btn-placeholder {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: 1px solid #333;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Estructuras Específicas: Buscador y Contacto */
+.buscador-area { margin-bottom: 30px; display: flex; justify-content: center; }
+.input-buscador { width: 80%; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9; }
+.formulario-contacto { display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: 0 auto; }
+.formulario-contacto input, .formulario-contacto textarea { width: 100%; padding: 10px; border: 1px solid #ccc; background: #fff; }
+.btn-enviar-largo { background-color: #222; color: #fff; padding: 15px; border: none; font-weight: bold; margin-top: 20px; cursor: pointer; }
+
+/* Estructuras para páginas individuales (Detalle, Perfil, Reglamento) */
+.contenedor-centrado { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; margin: 0 auto; gap: 20px; }
+.imagen-grande-placeholder { width: 100%; max-width: 600px; height: 350px; background-color: #eee; border: 1px dashed #aaa; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #999;}
+.contenedor-listado-vertical { display: flex; flex-direction: column; max-width: 800px; margin: 0 auto; gap: 20px; }
+.tarjeta-detalle { border: 1px solid #ccc; padding: 0; display: flex; flex-direction: column; }
+.tarjeta-header { display: flex; align-items: center; padding: 10px 20px; border-bottom: 1px solid #ccc; background-color: #f9f9f9; gap: 15px; }
+.icono-usuario { width: 30px; height: 30px; border-radius: 50%; background-color: #ddd; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;}
+.tarjeta-body { padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+.bloque-media { display: flex; gap: 20px; align-items: center; }
+.imagen-pequena-placeholder { width: 150px; height: 100px; border: 1px dashed #aaa; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #999;}
+.etiqueta-foto { font-size: 0.8rem; font-weight: bold; align-self: flex-start; margin-bottom: -10px; }
