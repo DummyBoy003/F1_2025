@@ -119,5 +119,5 @@
         </div>
     </div>
 
-    <script src="{{ asset('js/filtros.js') }}"></script>
+    <script src="{{ secure_asset('js/filtros.js') }}"></script>
 @endsection
