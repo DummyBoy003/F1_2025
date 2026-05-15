@@ -3,7 +3,7 @@
 @section('contenido')
     <h1 class="fw-bold mb-5 text-center text-white">CLASIFICACION DEL GP</h1>
 
-    <p class="text-muted mb-2 fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">FOTO DEL PILOTO</p>
+    <p class="text-muted mb-2 fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;"></p>
 
     <section class="row g-4">
         
