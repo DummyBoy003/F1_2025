@@ -1,5 +1,5 @@
 # 1. Usar imagen oficial de PHP con servidor Apache
-FROM php:8.2-apache
+FROM php:8.3-apache
 
 # 2. Instalar dependencias del sistema requeridas por Laravel y Composer
 RUN apt-get update && apt-get install -y \
