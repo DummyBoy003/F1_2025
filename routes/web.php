@@ -1,14 +1,14 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () { return view('inicio'); })->name('inicio');
-Route::get('/calendario', function () { return view('calendario'); })->name('calendario');
-Route::get('/clasificacion', function () { return view('clasificacion'); })->name('clasificacion');
-Route::get('/equipos', function () { return view('equipos'); })->name('equipos');
-Route::get('/pilotos', function () { return view('pilotos'); })->name('pilotos');
-Route::get('/faq', function () { return view('faq'); })->name('faq');
-Route::get('/articulos', function () { return view('articulos'); })->name('articulos');
-
+// Rutas estáticas actualizadas a la nueva carpeta 'pages'
+Route::get('/', function () { return view('pages.inicio'); })->name('inicio');
+Route::get('/calendario', function () { return view('pages.calendario'); })->name('calendario');
+Route::get('/clasificacion', function () { return view('pages.clasificacion'); })->name('clasificacion');
+Route::get('/equipos', function () { return view('pages.equipos'); })->name('equipos');
+Route::get('/pilotos', function () { return view('pages.pilotos'); })->name('pilotos');
+Route::get('/faq', function () { return view('pages.faq'); })->name('faq');
+Route::get('/articulos', function () { return view('pages.articulos'); })->name('articulos');
 
 // --- RUTA DINÁMICA DE DETALLE GP ---
 Route::get('/detalle-gp/{slug?}', function ($slug = 'australia') {
@@ -80,7 +80,7 @@ Route::get('/detalle-gp/{slug?}', function ($slug = 'australia') {
     // Busca la carrera, si no encuentra el nombre muestra Australia por defecto
     $gp_seleccionado = $carreras[$slug] ?? $carreras['australia'];
     
-    return view('detalle-gp', compact('gp_seleccionado'));
+    return view('pages.detalle-gp', compact('gp_seleccionado'));
 
 })->name('detalle-gp');
 // --------------------------------------
@@ -126,11 +126,11 @@ Route::get('/perfil-piloto/{slug?}', function ($slug = 'lance-stroll') {
     // Busca al piloto, si no encuentra el nombre (o si entran desde el menú superior), muestra a Lance por defecto
     $piloto_seleccionado = $pilotos[$slug] ?? $pilotos['lance-stroll'];
     
-    return view('perfil-piloto', compact('piloto_seleccionado'));
+    return view('pages.perfil-piloto', compact('piloto_seleccionado'));
 
 })->name('perfil-piloto');
 // --------------------------------------
 
-Route::get('/reglamento', function () { return view('reglamento'); })->name('reglamento');
-Route::get('/galeria', function () { return view('galeria'); })->name('galeria');
-Route::get('/contacto', function () { return view('contacto'); })->name('contacto');
+Route::get('/reglamento', function () { return view('pages.reglamento'); })->name('reglamento');
+Route::get('/galeria', function () { return view('pages.galeria'); })->name('galeria');
+Route::get('/contacto', function () { return view('pages.contacto'); })->name('contacto');
