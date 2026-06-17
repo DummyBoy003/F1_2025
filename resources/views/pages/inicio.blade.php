@@ -3,7 +3,7 @@
 @section('contenido')
     <div class="d-flex flex-column mb-5">
         <h1 class="fw-bold mb-4">SIGUIENTE CARRERA</h1>
-        <input type="text" class="form-control w-75 rounded-0 p-3 bg-white text-dark" placeholder="Search by seed name, location and more   Q">
+        
     </div>
 
     <section class="row g-4">
