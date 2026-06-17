@@ -1,0 +1,371 @@
+/* ========================================
+   F1 2025 - SISTEMA DE COLORES EXTENDIDO
+   ======================================== */
+
+/* ========================================
+   COLORES DE EQUIPOS F1 2025
+   ======================================== */
+:root {
+    /* Red Bull Racing */
+    --team-redbull: #0600EF;
+    --team-redbull-yellow: #FCD700;
+    
+    /* Ferrari */
+    --team-ferrari: #DC0000;
+    --team-ferrari-yellow: #FFF200;
+    
+    /* Mercedes */
+    --team-mercedes: #00D2BE;
+    --team-mercedes-silver: #C0C0C0;
+    
+    /* McLaren */
+    --team-mclaren: #FF8700;
+    --team-mclaren-blue: #47C7FC;
+    
+    /* Aston Martin */
+    --team-astonmartin: #006F62;
+    --team-astonmartin-lime: #00F5D0;
+    
+    /* Alpine */
+    --team-alpine: #0090FF;
+    --team-alpine-pink: #FF87BC;
+    
+    /* Williams */
+    --team-williams: #005AFF;
+    --team-williams-white: #FFFFFF;
+    
+    /* Haas */
+    --team-haas: #FFFFFF;
+    --team-haas-red: #B6BABD;
+    
+    /* Alfa Romeo / Sauber */
+    --team-sauber: #900000;
+    --team-sauber-white: #FFFFFF;
+    
+    /* AlphaTauri / RB */
+    --team-rb: #2B4562;
+    --team-rb-red: #6692FF;
+}
+
+/* ========================================
+   CLASES DE EQUIPOS
+   ======================================== */
+.bg-team-redbull { background-color: var(--team-redbull) !important; }
+.bg-team-ferrari { background-color: var(--team-ferrari) !important; }
+.bg-team-mercedes { background-color: var(--team-mercedes) !important; }
+.bg-team-mclaren { background-color: var(--team-mclaren) !important; }
+.bg-team-astonmartin { background-color: var(--team-astonmartin) !important; }
+.bg-team-alpine { background-color: var(--team-alpine) !important; }
+.bg-team-williams { background-color: var(--team-williams) !important; }
+.bg-team-haas { background-color: var(--team-haas) !important; color: #000 !important; }
+.bg-team-sauber { background-color: var(--team-sauber) !important; }
+.bg-team-rb { background-color: var(--team-rb) !important; }
+
+.text-team-redbull { color: var(--team-redbull) !important; }
+.text-team-ferrari { color: var(--team-ferrari) !important; }
+.text-team-mercedes { color: var(--team-mercedes) !important; }
+.text-team-mclaren { color: var(--team-mclaren) !important; }
+.text-team-astonmartin { color: var(--team-astonmartin) !important; }
+.text-team-alpine { color: var(--team-alpine) !important; }
+.text-team-williams { color: var(--team-williams) !important; }
+.text-team-haas { color: var(--team-haas) !important; }
+.text-team-sauber { color: var(--team-sauber) !important; }
+.text-team-rb { color: var(--team-rb) !important; }
+
+/* ========================================
+   BORDES DE EQUIPOS
+   ======================================== */
+.border-team-redbull { border-color: var(--team-redbull) !important; }
+.border-team-ferrari { border-color: var(--team-ferrari) !important; }
+.border-team-mercedes { border-color: var(--team-mercedes) !important; }
+.border-team-mclaren { border-color: var(--team-mclaren) !important; }
+.border-team-astonmartin { border-color: var(--team-astonmartin) !important; }
+.border-team-alpine { border-color: var(--team-alpine) !important; }
+.border-team-williams { border-color: var(--team-williams) !important; }
+.border-team-haas { border-color: var(--team-haas) !important; }
+.border-team-sauber { border-color: var(--team-sauber) !important; }
+.border-team-rb { border-color: var(--team-rb) !important; }
+
+/* ========================================
+   COMPONENTES ESPECIALES F1
+   ======================================== */
+
+/* Card de Piloto con Borde de Equipo */
+.card-piloto {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-piloto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--f1-red);
+}
+
+/* Card de GP con Efecto Hover */
+.card-gp {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-gp::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(225, 6, 0, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.card-gp:hover::after {
+    left: 100%;
+}
+
+/* Tabla de Clasificación */
+.clasificacion-table {
+    background-color: var(--f1-black-light);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.clasificacion-table thead {
+    background-color: var(--f1-red);
+    color: var(--f1-white);
+}
+
+.clasificacion-table tbody tr {
+    border-bottom: 1px solid var(--f1-gray);
+    transition: background-color 0.3s ease;
+}
+
+.clasificacion-table tbody tr:hover {
+    background-color: rgba(225, 6, 0, 0.1);
+}
+
+.clasificacion-table .position-1 {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.2) 0%, transparent 100%);
+}
+
+.clasificacion-table .position-2 {
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.2) 0%, transparent 100%);
+}
+
+.clasificacion-table .position-3 {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.2) 0%, transparent 100%);
+}
+
+/* ========================================
+   BADGES ESPECIALES
+   ======================================== */
+.badge-position {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.badge-p1 {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #000;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.badge-p2 {
+    background: linear-gradient(135deg, #C0C0C0 0%, #808080 100%);
+    color: #000;
+    box-shadow: 0 4px 10px rgba(192, 192, 192, 0.5);
+}
+
+.badge-p3 {
+    background: linear-gradient(135deg, #CD7F32 0%, #8B4513 100%);
+    color: #FFF;
+    box-shadow: 0 4px 10px rgba(205, 127, 50, 0.5);
+}
+
+/* ========================================
+   SECCIÓN HERO
+   ======================================== */
+.hero-section {
+    background: linear-gradient(135deg, var(--f1-black) 0%, var(--f1-red-dark) 100%);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.03) 10px,
+            rgba(255, 255, 255, 0.03) 20px
+        );
+}
+
+/* ========================================
+   CONTADOR REGRESIVO
+   ======================================== */
+.countdown-box {
+    background: linear-gradient(135deg, var(--f1-black-light) 0%, var(--f1-gray) 100%);
+    border: 2px solid var(--f1-red);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--f1-red);
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--f1-gray-light);
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* ========================================
+   ESTADÍSTICAS RÁPIDAS
+   ======================================== */
+.stat-card {
+    background: linear-gradient(135deg, var(--f1-black-light) 0%, var(--f1-gray) 100%);
+    border-left: 4px solid var(--f1-red);
+    padding: 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateX(5px);
+    box-shadow: -4px 0 15px rgba(225, 6, 0, 0.3);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--f1-red);
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--f1-gray-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   LOADING SPINNER F1
+   ======================================== */
+.f1-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--f1-gray);
+    border-top: 4px solid var(--f1-red);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   RESPONSIVE UTILITIES
+   ======================================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .countdown-number {
+        font-size: 1.75rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+/* ========================================
+   UTILIDADES ADICIONALES
+   ======================================== */
+.text-shadow-red {
+    text-shadow: 0 2px 10px rgba(225, 6, 0, 0.5);
+}
+
+.box-shadow-red {
+    box-shadow: 0 4px 15px rgba(225, 6, 0, 0.3);
+}
+
+.glow-red {
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.6);
+}
+
+.divider-red {
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--f1-red) 50%, transparent 100%);
+    margin: 30px 0;
+}
+
+/* Made with Bob */
