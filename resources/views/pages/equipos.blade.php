@@ -200,7 +200,7 @@
         {{-- Williams --}}
         <article class="col-md-4">
             <div class="card h-100 border-team-williams" style="border-top-width: 5px;">
-                <img src="{{ asset('img/logo-red-bull.jpg') }}" class="card-img-top" alt="Williams" style="object-fit: cover; height: 220px; filter: hue-rotate(180deg);">
+                <img src="{{ asset('img/logo-williams.jpg') }}" class="card-img-top" alt="Williams" style="object-fit: cover; height: 220px;">
                 <div class="card-body p-4 d-flex flex-column">
                     <h3 class="h5 fw-bold text-f1-white mb-2">WILLIAMS RACING</h3>
                     <p class="text-f1-gray mb-3" style="font-size: 0.85rem; line-height: 1.6;">
@@ -232,7 +232,7 @@
         {{-- Haas --}}
         <article class="col-md-4">
             <div class="card h-100 border-team-haas" style="border-top-width: 5px;">
-                <img src="{{ asset('img/logo-red-bull.jpg') }}" class="card-img-top" alt="Haas" style="object-fit: cover; height: 220px; filter: grayscale(100%);">
+                <img src="{{ asset('img/logo-haas.jpg') }}" class="card-img-top" alt="Haas" style="object-fit: cover; height: 220px;">
                 <div class="card-body p-4 d-flex flex-column">
                     <h3 class="h5 fw-bold text-f1-white mb-2">HAAS F1 TEAM</h3>
                     <p class="text-f1-gray mb-3" style="font-size: 0.85rem; line-height: 1.6;">
@@ -264,7 +264,7 @@
         {{-- Sauber/Stake --}}
         <article class="col-md-4">
             <div class="card h-100 border-team-sauber" style="border-top-width: 5px;">
-                <img src="{{ asset('img/logo-ferrari.jpg') }}" class="card-img-top" alt="Sauber" style="object-fit: cover; height: 220px; filter: brightness(0.5) sepia(1) hue-rotate(-30deg);">
+                <img src="{{ asset('img/logo-stake.jpg') }}" class="card-img-top" alt="Sauber" style="object-fit: cover; height: 220px;">
                 <div class="card-body p-4 d-flex flex-column">
                     <h3 class="h5 fw-bold text-f1-white mb-2">STAKE F1 TEAM</h3>
                     <p class="text-f1-gray mb-3" style="font-size: 0.85rem; line-height: 1.6;">
@@ -296,7 +296,7 @@
         {{-- RB (AlphaTauri) --}}
         <article class="col-md-4">
             <div class="card h-100 border-team-rb" style="border-top-width: 5px;">
-                <img src="{{ asset('img/logo-red-bull.jpg') }}" class="card-img-top" alt="RB" style="object-fit: cover; height: 220px; filter: brightness(0.7) saturate(0.5);">
+                <img src="{{ asset('img/logo-rb.jpg') }}" class="card-img-top" alt="RB" style="object-fit: cover; height: 220px;">
                 <div class="card-body p-4 d-flex flex-column">
                     <h3 class="h5 fw-bold text-f1-white mb-2">RB F1 TEAM</h3>
                     <p class="text-f1-gray mb-3" style="font-size: 0.85rem; line-height: 1.6;">
@@ -327,5 +327,3 @@
 
     </section>
 @endsection
-
-// Made with Bob
