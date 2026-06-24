@@ -92,34 +92,64 @@ Route::get('/perfil-piloto/{slug?}', function ($slug = 'lance-stroll') {
     // Nuestra "Base de datos" temporal de pilotos
     $pilotos = [
         'lance-stroll' => [
-            'nombre' => 'LANCE STROLL', 
-            'imagen' => 'lance-stroll.jpg', 
-            'historia' => 'Piloto canadiense actualmente compitiendo para Aston Martin. Conocido por sus excelentes arrancadas y manejo en lluvia.'
+            'nombre' => 'LANCE STROLL',
+            'numero' => '18',
+            'equipo' => 'Aston Martin',
+            'equipo_clase' => 'astonmartin',
+            'nacionalidad' => '🇨🇦 Canadá',
+            'anos_f1' => '8',
+            'imagen' => 'lance-stroll.jpg',
+            'historia' => 'Piloto canadiense actualmente compitiendo para Aston Martin. Conocido por sus excelentes arrancadas y manejo en lluvia. Hijo del empresario Lawrence Stroll, ha demostrado su talento en múltiples ocasiones con podios y actuaciones destacadas.'
         ],
         'lewis-hamilton' => [
-            'nombre' => 'LEWIS HAMILTON', 
-            'imagen' => 'lewis-hamilton.jpg', 
-            'historia' => 'Siete veces campeón del mundo. Una leyenda viva de la Fórmula 1 que busca seguir haciendo historia en la pista.'
+            'nombre' => 'LEWIS HAMILTON',
+            'numero' => '44',
+            'equipo' => 'Ferrari',
+            'equipo_clase' => 'ferrari',
+            'nacionalidad' => '🇬🇧 Reino Unido',
+            'anos_f1' => '18',
+            'imagen' => 'lewis-hamilton.jpg',
+            'historia' => 'Siete veces campeón del mundo. Una leyenda viva de la Fórmula 1 que busca seguir haciendo historia en la pista. En 2025 inicia una nueva era con Ferrari, buscando su octavo título mundial y escribir un nuevo capítulo en su legendaria carrera.'
         ],
         'carlos-sainz' => [
-            'nombre' => 'CARLOS SAINZ', 
-            'imagen' => 'carlos-sainz.jpg', 
-            'historia' => 'Piloto español con gran consistencia e inteligencia táctica, brillando en cada carrera que disputa.'
+            'nombre' => 'CARLOS SAINZ',
+            'numero' => '55',
+            'equipo' => 'Williams',
+            'equipo_clase' => 'williams',
+            'nacionalidad' => '🇪🇸 España',
+            'anos_f1' => '10',
+            'imagen' => 'carlos-sainz.jpg',
+            'historia' => 'Piloto español con gran consistencia e inteligencia táctica, brillando en cada carrera que disputa. Tras su exitoso paso por Ferrari, se une a Williams para liderar el resurgimiento de la histórica escudería británica.'
         ],
         'pierre-gasly' => [
-            'nombre' => 'PIERRE GASLY', 
-            'imagen' => 'pierre-gasly.jpg', 
-            'historia' => 'Piloto francés rápido y agresivo, ganador de Grandes Premios y pieza clave de su escudería.'
+            'nombre' => 'PIERRE GASLY',
+            'numero' => '10',
+            'equipo' => 'Alpine',
+            'equipo_clase' => 'alpine',
+            'nacionalidad' => '🇫🇷 Francia',
+            'anos_f1' => '7',
+            'imagen' => 'pierre-gasly.jpg',
+            'historia' => 'Piloto francés rápido y agresivo, ganador de Grandes Premios y pieza clave de su escudería. Su victoria en Monza 2020 con AlphaTauri sigue siendo uno de los momentos más memorables de la F1 moderna.'
         ],
         'esteban-ocon' => [
-            'nombre' => 'ESTEBAN OCON', 
-            'imagen' => 'esteban-ocon.jpg', 
-            'historia' => 'Talentoso piloto francés, conocido por su férrea defensa en pista y capacidad de maximizar el rendimiento del auto.'
+            'nombre' => 'ESTEBAN OCON',
+            'numero' => '31',
+            'equipo' => 'Alpine',
+            'equipo_clase' => 'alpine',
+            'nacionalidad' => '🇫🇷 Francia',
+            'anos_f1' => '8',
+            'imagen' => 'esteban-ocon.jpg',
+            'historia' => 'Talentoso piloto francés, conocido por su férrea defensa en pista y capacidad de maximizar el rendimiento del auto. Ganador del GP de Hungría 2021, forma una sólida dupla francesa en Alpine junto a Gasly.'
         ],
         'fernando-alonso' => [
-            'nombre' => 'FERNANDO ALONSO', 
-            'imagen' => 'fernando-alonso.jpg', 
-            'historia' => 'El veterano bicampeón del mundo. Un maestro de la estrategia y exprime el 110% de cualquier monoplaza que conduce.'
+            'nombre' => 'FERNANDO ALONSO',
+            'numero' => '14',
+            'equipo' => 'Aston Martin',
+            'equipo_clase' => 'astonmartin',
+            'nacionalidad' => '🇪🇸 España',
+            'anos_f1' => '22',
+            'imagen' => 'fernando-alonso.jpg',
+            'historia' => 'El veterano bicampeón del mundo. Un maestro de la estrategia y exprime el 110% de cualquier monoplaza que conduce. A sus 43 años, sigue demostrando que la edad es solo un número con actuaciones brillantes que desafían el tiempo.'
         ]
     ];
 
