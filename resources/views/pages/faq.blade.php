@@ -117,5 +117,3 @@
         }
     </style>
 @endsection
-
-// Made with Bob

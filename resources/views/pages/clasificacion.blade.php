@@ -50,9 +50,9 @@
                             </td>
                             <td><span class="badge bg-team-redbull">Red Bull Racing</span></td>
                             <td class="text-center"><strong class="text-f1-red" style="font-size: 1.2rem;">143</strong></td>
-                            <td class="text-center d-none d-md-table-cell">3</td>
-                            <td class="text-center d-none d-lg-table-cell">5</td>
-                            <td class="text-center d-none d-lg-table-cell">2</td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">3</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">5</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">2</strong></td>
                         </tr>
                         <tr class="position-2">
                             <td>
@@ -69,9 +69,9 @@
                             </td>
                             <td><span class="badge bg-team-ferrari">Ferrari</span></td>
                             <td class="text-center"><strong class="text-f1-red" style="font-size: 1.2rem;">128</strong></td>
-                            <td class="text-center d-none d-md-table-cell">2</td>
-                            <td class="text-center d-none d-lg-table-cell">4</td>
-                            <td class="text-center d-none d-lg-table-cell">3</td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">2</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">4</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">3</strong></td>
                         </tr>
                         <tr class="position-3">
                             <td>
@@ -88,9 +88,9 @@
                             </td>
                             <td><span class="badge bg-team-astonmartin">Aston Martin</span></td>
                             <td class="text-center"><strong class="text-f1-red" style="font-size: 1.2rem;">95</strong></td>
-                            <td class="text-center d-none d-md-table-cell">1</td>
-                            <td class="text-center d-none d-lg-table-cell">3</td>
-                            <td class="text-center d-none d-lg-table-cell">1</td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">1</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">3</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">1</strong></td>
                         </tr>
                         <tr>
                             <td><div class="badge-position bg-f1-gray">4</div></td>
@@ -104,10 +104,10 @@
                                 </div>
                             </td>
                             <td><span class="badge bg-team-williams">Williams</span></td>
-                            <td class="text-center"><strong class="text-f1-white">78</strong></td>
-                            <td class="text-center d-none d-md-table-cell">0</td>
-                            <td class="text-center d-none d-lg-table-cell">2</td>
-                            <td class="text-center d-none d-lg-table-cell">0</td>
+                            <td class="text-center"><strong class="text-f1-white" style="font-size: 1.1rem;">78</strong></td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">0</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">2</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">0</strong></td>
                         </tr>
                         <tr>
                             <td><div class="badge-position bg-f1-gray">5</div></td>
@@ -121,10 +121,10 @@
                                 </div>
                             </td>
                             <td><span class="badge bg-team-alpine">Alpine</span></td>
-                            <td class="text-center"><strong class="text-f1-white">62</strong></td>
-                            <td class="text-center d-none d-md-table-cell">0</td>
-                            <td class="text-center d-none d-lg-table-cell">1</td>
-                            <td class="text-center d-none d-lg-table-cell">0</td>
+                            <td class="text-center"><strong class="text-f1-white" style="font-size: 1.1rem;">62</strong></td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">0</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">1</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">0</strong></td>
                         </tr>
                         <tr>
                             <td><div class="badge-position bg-f1-gray">6</div></td>
@@ -138,10 +138,10 @@
                                 </div>
                             </td>
                             <td><span class="badge bg-team-astonmartin">Aston Martin</span></td>
-                            <td class="text-center"><strong class="text-f1-white">54</strong></td>
-                            <td class="text-center d-none d-md-table-cell">0</td>
-                            <td class="text-center d-none d-lg-table-cell">1</td>
-                            <td class="text-center d-none d-lg-table-cell">0</td>
+                            <td class="text-center"><strong class="text-f1-white" style="font-size: 1.1rem;">54</strong></td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">0</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">1</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">0</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -200,9 +200,9 @@
                                 </div>
                             </td>
                             <td class="text-center"><strong class="text-f1-red" style="font-size: 1.3rem;">268</strong></td>
-                            <td class="text-center d-none d-md-table-cell">5</td>
-                            <td class="text-center d-none d-lg-table-cell">9</td>
-                            <td class="text-center d-none d-lg-table-cell">4</td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">5</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">9</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">4</strong></td>
                         </tr>
                         <tr class="position-2">
                             <td><div class="badge-position badge-p2">2</div></td>
@@ -216,9 +216,9 @@
                                 </div>
                             </td>
                             <td class="text-center"><strong class="text-f1-red" style="font-size: 1.3rem;">245</strong></td>
-                            <td class="text-center d-none d-md-table-cell">3</td>
-                            <td class="text-center d-none d-lg-table-cell">8</td>
-                            <td class="text-center d-none d-lg-table-cell">5</td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">3</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">8</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">5</strong></td>
                         </tr>
                         <tr class="position-3">
                             <td><div class="badge-position badge-p3">3</div></td>
@@ -232,9 +232,9 @@
                                 </div>
                             </td>
                             <td class="text-center"><strong class="text-f1-red" style="font-size: 1.3rem;">149</strong></td>
-                            <td class="text-center d-none d-md-table-cell">1</td>
-                            <td class="text-center d-none d-lg-table-cell">4</td>
-                            <td class="text-center d-none d-lg-table-cell">1</td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">1</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">4</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">1</strong></td>
                         </tr>
                         <tr>
                             <td><div class="badge-position bg-f1-gray">4</div></td>
@@ -247,10 +247,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center"><strong class="text-f1-white">132</strong></td>
-                            <td class="text-center d-none d-md-table-cell">1</td>
-                            <td class="text-center d-none d-lg-table-cell">3</td>
-                            <td class="text-center d-none d-lg-table-cell">2</td>
+                            <td class="text-center"><strong class="text-f1-white" style="font-size: 1.2rem;">132</strong></td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">1</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">3</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">2</strong></td>
                         </tr>
                         <tr>
                             <td><div class="badge-position bg-f1-gray">5</div></td>
@@ -263,10 +263,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center"><strong class="text-f1-white">118</strong></td>
-                            <td class="text-center d-none d-md-table-cell">0</td>
-                            <td class="text-center d-none d-lg-table-cell">2</td>
-                            <td class="text-center d-none d-lg-table-cell">1</td>
+                            <td class="text-center"><strong class="text-f1-white" style="font-size: 1.2rem;">118</strong></td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">0</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">2</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">1</strong></td>
                         </tr>
                         <tr>
                             <td><div class="badge-position bg-f1-gray">6</div></td>
@@ -279,10 +279,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center"><strong class="text-f1-white">95</strong></td>
-                            <td class="text-center d-none d-md-table-cell">0</td>
-                            <td class="text-center d-none d-lg-table-cell">1</td>
-                            <td class="text-center d-none d-lg-table-cell">0</td>
+                            <td class="text-center"><strong class="text-f1-white" style="font-size: 1.2rem;">95</strong></td>
+                            <td class="text-center d-none d-md-table-cell"><strong class="text-f1-white">0</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">1</strong></td>
+                            <td class="text-center d-none d-lg-table-cell"><strong class="text-f1-white">0</strong></td>
                         </tr>
                     </tbody>
                 </table>
